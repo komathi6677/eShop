@@ -34,5 +34,5 @@ jobs:
         # Container registry server url
         login-server: ${{SECRETS.ACR_SERVER}}
     - run: |
-         docker build -f src/Web/Dockerfile . -t ${{SECRETS.ACR_SERVER}} / eshop: ${{ github.run_id }}
+         docker build -f src/Web/Dockerfile . -t ${{SECRETS.ACR_SERVER}}/eshop:${{ github.run_id }}
          docker push ${{SECRETS.ACR_SERVER}}/eshop:${{github.run_id }}
