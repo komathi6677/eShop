@@ -1,4 +1,4 @@
-ame: eShop Build and Test
+name: eShop Build and Test
 
 on:
   push:
